@@ -145,7 +145,7 @@ double promptDouble(std::string message, double min, double max)
                 }
             }
             //cant put a . in the first index, not valid
-            if (length == 1 && userInput[0] == '.') {
+            if (length == 0 && userInput[0] == '.') {
                 validDouble = false;
             }
             if (!validDouble) {
